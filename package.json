@@ -2,5 +2,9 @@
   "name": "hanpyo",
   "version": "1.0.0",
   "main": "index.js",
-  "repository": "https://github.com/wooyeon-dev/hanpyo_fe.git"
+  "repository": "https://github.com/wooyeon-dev/hanpyo_fe.git",
+  "dependencies": {
+    "@types/react": "^17.0.21",
+    "react": "^17.0.2"
+  }
 }
