@@ -3,14 +3,13 @@
 const path = require("path");
 const HtmlWebpackPlugin = require("html-webpack-plugin");
 const ForkTsCheckerWebpackPlugin = require("fork-ts-checker-webpack-plugin");
-const { CleanWebpackPlugin } = require("clean-webpack-plugin");
 
 module.exports = {
   entry: ["./src/index.tsx"],
   output: {
     path: path.join(__dirname, "dist"),
     publicPath: "/",
-    filename: "[name].[contenthash].js"
+    filename: "[name].[contenthash].js",
   },
   devtool: "source-map",
   devServer: {
@@ -56,7 +55,6 @@ module.exports = {
       filename: "index.html",
       template: "./public/index.html"
     }),
-    new ForkTsCheckerWebpackPlugin(),
-    new CleanWebpackPlugin()
+    new ForkTsCheckerWebpackPlugin()
   ]
 };
