@@ -5,8 +5,8 @@
   "repository": "https://github.com/wooyeon-dev/hanpyo_fe.git",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "start": "webpack-dev-server --mode development --open --hot",
-    "build": "webpack --mode production"
+    "start": "webpack serve --open --hot --config webpack.config.dev.js",
+    "build": "webpack --config webpack.config.prod.js"
   },
   "dependencies": {
     "@types/react": "^17.0.21",
