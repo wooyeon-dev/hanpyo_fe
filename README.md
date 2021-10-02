@@ -28,3 +28,7 @@ Hanpyo renewal project
     - api (API 구조가 정해지면 다시 논의)
     - store (store 구조 작업시 다시 논의)
 ```
+
+## WIKI
+- [개발 컨벤션](https://github.com/wooyeon-dev/hanpyo_fe/wiki/%EA%B0%9C%EB%B0%9C-%EC%BB%A8%EB%B2%A4%EC%85%98)
+- [기술 스택](https://github.com/wooyeon-dev/hanpyo_fe/wiki/%EA%B8%B0%EC%88%A0-%EC%8A%A4%ED%83%9D)
