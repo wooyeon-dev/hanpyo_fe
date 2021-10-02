@@ -46,6 +46,7 @@
     "url-loader": "^4.1.1",
     "webpack": "^5.55.1",
     "webpack-cli": "^4.8.0",
-    "webpack-dev-server": "^4.3.0"
+    "webpack-dev-server": "^4.3.0",
+    "webpack-merge": "^5.8.0"
   }
 }
