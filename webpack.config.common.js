@@ -2,13 +2,12 @@
 
 const path = require("path");
 const HtmlWebpackPlugin = require("html-webpack-plugin");
-const ForkTsCheckerWebpackPlugin = require("fork-ts-checker-webpack-plugin");
 const MiniCssExtractPlugin = require("mini-css-extract-plugin");
 
 module.exports = {
   entry: ["./src/index.tsx"],
   output: {
-    path: path.join(__dirname, "dist"),
+    path: path.join(__dirname, "./dist"),
     publicPath: "/",
     filename: "[name].[contenthash].js",
     clean: true
@@ -48,7 +47,6 @@ module.exports = {
       filename: "index.html",
       template: "./public/index.html"
     }),
-    new MiniCssExtractPlugin({ filename: "style.css" }),
-    new ForkTsCheckerWebpackPlugin()
+    new MiniCssExtractPlugin({ filename: "style.css" })
   ]
 };
