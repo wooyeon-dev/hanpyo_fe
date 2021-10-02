@@ -8,7 +8,7 @@ module.exports = {
         }
       }
     ],
-    "@babel/react",
-    "@babel/typescript"
+    "@babel/preset-react",
+    "@babel/preset-typescript"
   ]
 };
