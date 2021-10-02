@@ -13,11 +13,6 @@ module.exports = {
     filename: "[name].[contenthash].js",
     clean: true
   },
-  devtool: "eval",
-  devServer: {
-    historyApiFallback: true,
-    port: 3000
-  },
   resolve: {
     extensions: [".ts", ".tsx", ".js", ".jsx", ".css", ".scss"],
     alias: {
