@@ -10,5 +10,17 @@ module.exports = merge(common, {
     historyApiFallback: true,
     port: 3000,
     hot: true
+  },
+  module: {
+    rules: [
+      {
+        test: /\.s[ac]ss$/,
+        use: [
+          "style-loader",
+          { loader: "css-loader", options: { modules: { localIdentName: "[path][name]__[local]_[hash:base64:5]" } } },
+          { loader: "sass-loader", options: { sourceMap: true } }
+        ]
+      }
+    ]
   }
 });
