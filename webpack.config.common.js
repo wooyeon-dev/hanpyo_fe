@@ -7,7 +7,7 @@ module.exports = {
   entry: ["./src/index.tsx"],
   output: {
     path: path.join(__dirname, "./dist"),
-    publicPath: "/",
+    publicPath: "auto",
     filename: "[name].[contenthash].js",
     clean: true
   },
