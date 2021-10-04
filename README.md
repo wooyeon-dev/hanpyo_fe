@@ -32,3 +32,4 @@ Hanpyo renewal project
 ## WIKI
 - [개발 컨벤션](https://github.com/wooyeon-dev/hanpyo_fe/wiki/%EA%B0%9C%EB%B0%9C-%EC%BB%A8%EB%B2%A4%EC%85%98)
 - [기술 스택](https://github.com/wooyeon-dev/hanpyo_fe/wiki/%EA%B8%B0%EC%88%A0-%EC%8A%A4%ED%83%9D)
+- [브랜치 관리 전략](https://github.com/wooyeon-dev/hanpyo_fe/wiki/%EB%B8%8C%EB%9E%9C%EC%B9%98-%EA%B4%80%EB%A6%AC-%EC%A0%84%EB%9E%B5)
