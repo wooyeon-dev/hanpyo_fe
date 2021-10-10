@@ -17,7 +17,7 @@ module.exports = merge(common, {
         test: /\.s[ac]ss$/,
         use: [
           "style-loader",
-          { loader: "css-loader", options: { modules: { localIdentName: "[path][name]__[local]_[hash:base64:5]" } } },
+          { loader: "css-loader", options: { modules: { localIdentName: "[local]__[hash:base64:5]" } } },
           { loader: "sass-loader", options: { sourceMap: true } }
         ]
       }
