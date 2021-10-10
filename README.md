@@ -28,6 +28,20 @@ Hanpyo renewal project
     - api (API 구조가 정해지면 다시 논의)
     - store (store 구조 작업시 다시 논의)
 ```
+## 개발환경 설정
+- IDE 환경 셋팅
+  - IDE : vsCode
+  - extensions : ESLint, Prettier, EditorConfig, stylelint (컨벤션 체크 위한 필수) 
+
+- 프로젝트 로컬 실행
+```
+npm install
+npm run start
+```
+
+## Browser Support
+- Chrome
+- 크로스 브라우징 지원은 추후 논의 
 
 ## WIKI
 - [개발 컨벤션](https://github.com/wooyeon-dev/hanpyo_fe/wiki/%EA%B0%9C%EB%B0%9C-%EC%BB%A8%EB%B2%A4%EC%85%98)
