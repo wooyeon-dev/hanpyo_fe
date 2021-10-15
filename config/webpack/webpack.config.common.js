@@ -1,18 +1,18 @@
-const path = require("path");
 const HtmlWebpackPlugin = require("html-webpack-plugin");
+const paths = require("../paths");
 
 module.exports = {
-  entry: ["./src/index.tsx"],
+  entry: [`${paths.src}/index.tsx`],
   output: {
-    path: path.join(__dirname, "./dist"),
-    publicPath: "auto",
+    path: paths.buildPath,
+    publicPath: paths.publicPath,
     filename: "[name].[contenthash].js",
     clean: true
   },
   resolve: {
     extensions: [".ts", ".tsx", ".js", ".jsx", ".css", ".scss"],
     alias: {
-      "@": path.resolve(__dirname, "src")
+      "@": paths.src
     }
   },
   module: {
@@ -27,7 +27,7 @@ module.exports = {
         use: {
           loader: "url-loader",
           options: {
-            publicPath: "/",
+            publicPath: paths.publicPath,
             name: "[name].[ext]?[contenthash]",
             limit: 10000
           }
@@ -38,7 +38,7 @@ module.exports = {
   plugins: [
     new HtmlWebpackPlugin({
       filename: "index.html",
-      template: "./public/index.html"
+      template: `${paths.templatePath}/index.html`
     })
   ]
 };
