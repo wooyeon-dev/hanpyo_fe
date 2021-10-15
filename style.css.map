@@ -1,0 +1,1 @@
+{"version":3,"file":"style.css","mappings":"AAAA,sBACE,SAAU","sources":["webpack://hanpyo/./src/index.scss"],"sourcesContent":[".text {\n  color: red;\n}\n"],"names":[],"sourceRoot":""}
