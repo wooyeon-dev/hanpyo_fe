@@ -1,13 +1,10 @@
 import React, { ReactElement } from "react";
-
-import styles from "./index.scss";
+import { renderRoutes } from "react-router-config";
+import { BrowserRouter } from "react-router-dom";
+import routes from "@/common/routes";
 
 function App(): ReactElement {
-  return (
-    <div>
-      <h1 className={styles.text}> Hanpyo </h1>
-    </div>
-  );
+  return <BrowserRouter>{renderRoutes(routes)}</BrowserRouter>;
 }
 
 export default App;
