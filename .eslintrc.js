@@ -48,6 +48,7 @@ module.exports = {
         tsx: "never"
       }
     ],
-    "import/prefer-default-export": "off"
+    "import/prefer-default-export": "off",
+    "@typescript-eslint/no-var-requires": "off"
   }
 };

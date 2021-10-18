@@ -5,12 +5,15 @@
   "repository": "https://github.com/wooyeon-dev/hanpyo_fe.git",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "start": "webpack serve --open --config webpack.config.dev.js",
-    "build": "webpack --config webpack.config.prod.js"
+    "start": "webpack serve --open --config ./config/webpack/webpack.config.dev.js",
+    "build": "webpack --config ./config/webpack/webpack.config.prod.js",
+    "predeploy": "npm run build && cp CNAME ./dist ",
+    "deploy": "node ./scripts/deploy.js"
   },
   "dependencies": {
     "@types/react": "^17.0.21",
     "@types/react-dom": "^17.0.9",
+    "gh-pages": "^3.2.3",
     "react": "^17.0.2",
     "react-dom": "^17.0.2"
   },
