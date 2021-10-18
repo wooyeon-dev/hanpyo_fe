@@ -8,10 +8,12 @@ const routes = [
   },
   {
     path: "/mypage",
+    exact: true,
     component: MyPage
   },
   {
     path: "/review",
+    exact: true,
     component: ReviewPage
   }
 ];
