@@ -4,7 +4,9 @@ Hanpyo renewal project
 
 ## 프로젝트 폴더 구조
 ```
+- config (웹팩 등 복잡한 설정 파일)
 - public
+- scripts (npm 스크립트 파일)
 - src
     - __tests__
     - pages (페이지 단위 진입 컴포넌트)
@@ -26,7 +28,7 @@ Hanpyo renewal project
         - utils
         - ....
     - api (API 구조가 정해지면 다시 논의)
-    - store (store 구조 작업시 다시 논의)
+    - store (recoil 페이지 단위 상태관리)
 ```
 ## 개발환경 설정
 - IDE 환경 셋팅
