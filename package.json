@@ -4,7 +4,7 @@
   "main": "index.js",
   "repository": "https://github.com/wooyeon-dev/hanpyo_fe.git",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1",
+    "test": "jest",
     "start": "webpack serve --open --config ./config/webpack/webpack.config.dev.js",
     "build": "webpack --config ./config/webpack/webpack.config.prod.js",
     "predeploy": "npm run build && cp CNAME ./dist ",
