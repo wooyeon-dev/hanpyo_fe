@@ -11,15 +11,18 @@
     "deploy": "node ./scripts/deploy.js"
   },
   "dependencies": {
+    "@types/jest": "^27.0.2",
     "@types/react": "^17.0.21",
     "@types/react-dom": "^17.0.9",
     "@types/react-router-config": "^5.0.3",
     "@types/react-router-dom": "^5.3.1",
     "gh-pages": "^3.2.3",
+    "jest": "^27.3.1",
     "react": "^17.0.2",
     "react-dom": "^17.0.2",
     "react-router-config": "^5.1.1",
-    "react-router-dom": "^5.3.0"
+    "react-router-dom": "^5.3.0",
+    "ts-jest": "^27.0.7"
   },
   "devDependencies": {
     "@babel/core": "^7.15.5",
