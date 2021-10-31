@@ -4,7 +4,7 @@ module.exports = {
     es2021: true,
     jest: true
   },
-  ignorePatterns: ["node_modules/"],
+  ignorePatterns: ["node_modules/", "*.scss"],
   extends: [
     "eslint:recommended",
     "plugin:react/recommended",
