@@ -8,6 +8,6 @@ module.exports = {
   "useTabs": false,
   "arrowParens": "always",
   "endOfLine": "lf",
-  "jsxBracketSameLine": true,
+  "bracketSameLine": true,
   "jsxSingleQuote": false
 }
