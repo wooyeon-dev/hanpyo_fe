@@ -1,3 +1,4 @@
 export const COMMON_KEY = {
-  TEXT_STATE: "textState"
+  NUM_STATE: "NUM_STATE",
+  DOUBLE_NUM_STATE: "DOUBLE_NUM_STATE"
 };
