@@ -1,6 +1,7 @@
 import React, { ReactElement, ChangeEvent } from "react";
 import { useRecoilState, useRecoilValue } from "recoil";
 import { numState, doubleNumState } from "@/store/common";
+import useDebugObserver from "@/hooks/useDebugObserver";
 
 function MainPage(): ReactElement {
   const [num, setNum] = useRecoilState(numState);
@@ -11,6 +12,8 @@ function MainPage(): ReactElement {
 
     setNum(Number.isNaN(newNum) ? 0 : newNum);
   };
+
+  useDebugObserver();
 
   return (
     <div>
