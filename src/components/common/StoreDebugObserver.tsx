@@ -1,4 +1,5 @@
 /* eslint-disable no-console */
+import React, { ReactElement } from "react";
 // eslint-disable-next-line camelcase
 import { useRecoilTransactionObserver_UNSTABLE, RecoilValue } from "recoil";
 
@@ -11,7 +12,7 @@ type TDebugInfo = {
   deps: RecoilValue<unknown>[];
 };
 
-const useDebugObserver = (): void => {
+function StoreDebugObserver(): ReactElement {
   useRecoilTransactionObserver_UNSTABLE(({ snapshot }) => {
     console.group("Snapshot");
 
@@ -35,6 +36,7 @@ const useDebugObserver = (): void => {
     console.table(debugInfos);
     console.groupEnd();
   });
-};
+  return <></>;
+}
 
-export default useDebugObserver;
+export default StoreDebugObserver;
