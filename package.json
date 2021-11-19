@@ -8,7 +8,8 @@
     "start": "webpack serve --open --config ./config/webpack/webpack.config.dev.js",
     "build": "webpack --config ./config/webpack/webpack.config.prod.js",
     "predeploy": "npm run build && cp CNAME ./dist ",
-    "deploy": "node ./scripts/deploy.js"
+    "deploy": "node ./scripts/deploy.js",
+    "prepare": "husky install"
   },
   "dependencies": {
     "@types/react": "^17.0.21",
@@ -42,7 +43,9 @@
     "eslint-plugin-prettier": "3.4.0",
     "eslint-plugin-react": "^7.25.2",
     "html-webpack-plugin": "^5.3.2",
+    "husky": "^7.0.4",
     "jest": "^27.3.1",
+    "lint-staged": "^11.2.6",
     "mini-css-extract-plugin": "^2.3.0",
     "node-sass": "^6.0.1",
     "prettier": "^2.4.1",
@@ -59,5 +62,12 @@
     "webpack-cli": "^4.8.0",
     "webpack-dev-server": "^4.3.0",
     "webpack-merge": "^5.8.0"
+  },
+  "lint-staged": {
+    "*.{js,jsx,ts,tsx}": [
+      "prettier --write",
+      "eslint --fix"
+    ],
+    "*.scss": "stylelint --fix"
   }
 }
