@@ -1,4 +1,4 @@
-import { MainPage, MyPage, ReviewPage } from "@/pages";
+import { MainPage, MyPage, ReviewPage, DummyPage } from "@/pages";
 
 const routes = [
   {
@@ -15,6 +15,11 @@ const routes = [
     path: "/review",
     exact: true,
     component: ReviewPage
+  },
+  {
+    path: "/dummy",
+    exact: true,
+    component: DummyPage
   }
 ];
 
