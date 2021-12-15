@@ -1,0 +1,22 @@
+@mixin sideWrapper() {
+  width: 600px;
+  height: 100%;
+}
+
+.container {
+  display: flex;
+  height: 100%;
+  gap: 20px;
+}
+
+.leftWrapper {
+  background-color: oldlace;
+
+  @include sideWrapper();
+}
+
+.rightWrapper {
+  background-color: darkseagreen;
+
+  @include sideWrapper();
+}
